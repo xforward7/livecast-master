@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.ui.activity.download.DownloadCourseActivity">
+    <include android:id="@+id/top" layout="@layout/include_leftbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CFD9E6"/>
+    <include
+        layout="@layout/default_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/material_white"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <CheckBox
+                    android:id="@+id/checkbox_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    style="@style/checkBoxPayStyle"
+                    android:text="全选"
+                    android:textColor="@color/colorTitleTextview"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_download_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="立即下载"
+                android:textColor="@color/material_white"
+                android:gravity="center"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

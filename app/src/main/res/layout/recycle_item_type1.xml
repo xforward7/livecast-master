@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.aidingyun.ynlive.mvp.ui.widget.RecyclerViewBanner
+        android:id="@+id/recyclerViewBanner"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginBottom="10dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop" />
+</LinearLayout>

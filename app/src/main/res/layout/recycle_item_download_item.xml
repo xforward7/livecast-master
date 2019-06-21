@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/material_white"
+    >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/dp_10">
+
+        <CheckBox
+            android:id="@+id/checkbox_download_course"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            style="@style/checkBoxPayStyle"
+            android:padding="5dp"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="164dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_height="95dp"
+                android:src="@mipmap/young"
+                android:id="@+id/item_recyc_type3_item_img" />
+            <TextView
+                android:id="@+id/tv_live_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播中"
+                android:textColor="@color/material_white"
+                android:background="@drawable/red_r4"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                android:padding="2dp"
+                android:textSize="10sp"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AE影视后期片头动画"
+                android:textColor="@color/colorTitleTextview"
+                android:textSize="@dimen/sp_16"
+                android:id="@+id/tv_lable" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_lable"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/stars_selected"
+                    android:textSize="@dimen/sp_12"
+                    android:text="4.9分"/>
+                <TextView
+                    android:id="@+id/tv_collent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/sp_12"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:text="人收藏"/>
+            </LinearLayout>
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500"
+                        android:textSize="20sp"
+                        android:textColor="@color/text_sticker_blue_easy_photos"
+                        />
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/text_sticker_blue_easy_photos"
+                        android:text="金币"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/iv_status"
+                    android:layout_centerVertical="true"
+                    android:text="下载完成"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorcontentTextview"/>
+                <ImageView
+                    android:id="@+id/iv_status"
+                    android:layout_width="28px"
+                    android:layout_height="18px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_bottom"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

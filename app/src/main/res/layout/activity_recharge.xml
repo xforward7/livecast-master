@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_bar" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_container"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            style="@style/checkBoxRechargeStyle"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/one_gold"
+                style="@style/tv_recharge"
+                android:text="6金币" />
+
+            <TextView
+                android:id="@+id/one_money"
+                style="@style/tv_recharge_two"
+                android:text="￥6.00" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_r4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/two_gold"
+                style="@style/tv_recharge"
+                android:text="15金币" />
+
+            <TextView
+                android:id="@+id/two_money"
+                style="@style/tv_recharge_two"
+                android:text="￥15.00" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_r4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/three_gold"
+                style="@style/tv_recharge"
+                android:text="30金币" />
+
+            <TextView
+                android:id="@+id/three_money"
+                style="@style/tv_recharge_two"
+                android:text="￥30.00" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_r4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/four_gold"
+                style="@style/tv_recharge"
+                android:text="40金币" />
+
+            <TextView
+                android:id="@+id/four_money"
+                style="@style/tv_recharge_two"
+                android:text="￥40.00" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_r4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/five_gold"
+                style="@style/tv_recharge"
+                android:text="50金币" />
+
+            <TextView
+                android:id="@+id/five_money"
+                style="@style/tv_recharge_two"
+                android:text="￥50.00" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/six"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_r4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/six_gold"
+                style="@style/tv_recharge"
+                android:text="60金币" />
+
+            <TextView
+                android:id="@+id/six_money"
+                style="@style/tv_recharge_two"
+                android:text="￥60.00" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="其他数量"
+        android:textColor="@color/colorNumber"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/view4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/view3"
+        android:background="@drawable/bg_r4"
+        android:hint="请输入整数"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textColor="@color/colorPrompt2"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/view4"
+        android:padding="10dp"
+        android:text="金币"
+        android:textColor="@color/colorNumber"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/view4"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/blue_one_r2"
+        android:gravity="center"
+        android:text="立即充值"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_recharge"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp"
+            android:gravity="center"
+            android:text="常见问题"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="客服热线：0755-666666666"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="周一至周五 10：00-19：00"
+            android:textSize="10sp" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

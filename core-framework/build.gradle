@@ -1,0 +1,39 @@
+apply from: rootProject.file('cc-settings.gradle')
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes{
+        release{
+            multiDexKeepProguard file('multidex-config.pro')
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation rootProject.ext.dependencies["junit"]
+    androidTestImplementation rootProject.ext.dependencies["runner"]
+    androidTestImplementation rootProject.ext.dependencies["espresso-core"]
+    implementation(rootProject.ext.dependencies["appcompat-v7"])
+
+    api 'com.github.yjfnypeu:EasyThread:0.6.0'
+    api 'me.jessyan:arms:2.4.1'
+    api 'com.billy.android:cc:1.1.0'
+    api 'com.yanzhenjie:sofia:1.0.5'
+}

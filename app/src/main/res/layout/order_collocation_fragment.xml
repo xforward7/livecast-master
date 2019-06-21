@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/screen"
+        app:srlEnableHeaderTranslationContent="true">
+
+        <include layout="@layout/default_rv" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <ExpandableListView
+        android:id="@+id/elv_collocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeff3"
+        android:divider="#eeeff3"
+        android:visibility="invisible"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="@null" />
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

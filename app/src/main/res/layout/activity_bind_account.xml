@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_bar" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/verify_code_send_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="用于课程的学习提醒等服务，手机号不会对外公开，请放心!"
+        android:textColor="@color/colorPrompt"
+        android:textSize="12sp"
+        android:maxLines="1"/>
+
+    <include layout="@layout/public_account_layout" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/login_r22"
+        android:text="完成"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+</com.zhy.autolayout.AutoLinearLayout>

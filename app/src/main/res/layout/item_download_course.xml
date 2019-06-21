@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="@dimen/dp_10">
+    <CheckBox
+        android:id="@+id/checkbox_download_course"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/checkBoxPayStyle"
+        android:padding="5dp"
+        android:textColor="@color/colorTitleTextview"/>
+    <TextView
+        android:id="@+id/tv_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/checkbox_download_course"
+        android:layout_marginLeft="@dimen/sp_12"
+        android:text="1.界面卡顿"/>
+    <TextView
+        android:id="@+id/tv_download_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="下载完成"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorcontentTextview"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

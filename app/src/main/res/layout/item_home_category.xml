@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/item_home_name"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:background="@drawable/rb_choose_category"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="@dimen/dp_10"
+        android:text="二级" />
+
+</LinearLayout>

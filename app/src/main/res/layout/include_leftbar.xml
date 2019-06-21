@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/material_white"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="@dimen/dp_10"
+            android:src="@mipmap/icon_tab_back" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="标题"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载管理"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dp_10"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTitleTextview"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:textSize="14sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</LinearLayout>

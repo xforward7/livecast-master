@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF419CFA</color>
+    <color name="colorPrimaryDark">#FF419CFA</color>
+    <color name="colorAccent">#FF419CFA</color>
+
+
+    <!--TitleBar-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ffcc0000</color>
+    <color name="colorLineGray">#DCDCDC</color>
+    <color name="colorBackground">#F5F7FA</color>
+    <color name="colorTextBlack">#333333</color>
+    <color name="colorTextBlackLight">#636363</color>
+    <color name="colorWhitePressed">#dcdcdc</color>
+    <color name="colorLine">#CFD9E6</color>
+    <color name="colorNumber">#5C7799</color>
+    <color name="colorPrompt">#A4B6CC</color>
+    <color name="colorPrompt2">#172E4D</color>
+    <color name="colorBuleOne">#7BBAFC</color>
+    <color name="colorRatingBar">#FFD900</color>
+    <color name="colormall">#A4B6CC</color>
+
+    <color name="colorTitleTextview">#5C7799</color>
+    <color name="colorcontentTextview">#A4B6CC</color>
+    <color name="colorselectTextview">#419DFB</color>
+
+    <color name="theme_color">#39C5BB</color>
+    <color name="player_theme_color_translucent">#9939C5BB</color>
+    <color name="player_background_color">#96000000</color>
+</resources>

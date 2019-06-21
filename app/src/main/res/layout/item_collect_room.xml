@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aidingyun.ynlive.mvp.ui.widget.swipe.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:id="@+id/course_detail_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="164dp"
+            android:layout_height="95dp">
+
+            <ImageView
+                android:id="@+id/item_recyc_type3_item_img"
+                android:layout_width="164dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/young" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="培训中心"
+                android:textColor="@color/colorTitleTextview"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_lable"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/livecontent_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="如何提高英语口语水平"
+                    android:textColor="@color/colorcontentTextview"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/liveroom_livetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="2019-01-01   00:00-10:00"
+                    android:textColor="@color/colorcontentTextview"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/material_red_400"
+        android:gravity="center">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="1"
+            android:text="取消收藏"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</com.aidingyun.ynlive.mvp.ui.widget.swipe.SwipeItemLayout>

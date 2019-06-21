@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="课题精选"
+            android:textColor="@color/colorTextBlack"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_recyc_type2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorLineGray"
+        />
+
+    <TextView
+        android:id="@+id/tv_check_more"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="查看更多 >>"
+        android:textColor="@color/text_sticker_blue_easy_photos"
+        android:gravity="center"
+        android:drawableRight="@drawable/ic_go"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

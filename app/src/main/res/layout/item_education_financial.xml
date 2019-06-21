@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/find_financial_listview_leftIvItem"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_financial"
+            android:layout_width="164dp"
+            android:layout_height="94dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhanweitu" />
+        <!--tools:visibility="visible" -->
+        <TextView
+            android:id="@+id/tv_live_now"
+            android:layout_width="37dp"
+            android:layout_height="16dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/bg_red_r7"
+            android:gravity="center"
+            android:text="直播中"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/find_financial_listview_leftIvItem">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AE影视后期片头动画"
+            android:textColor="@color/colorNumber"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:id="@+id/ratingbar_number"
+            style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="5dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/colorLine"
+            android:progressTint="@color/colorRatingBar"
+            android:rating="3.5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ratingbar_number"
+            android:text="4.9"
+            android:textColor="@color/colorPrompt2"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/pay_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_score"
+            android:text="2161人收藏"
+            android:textColor="@color/colorPrompt"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/ratingbar_number"
+            android:gravity="center"
+            android:text="500"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginTop="37dp"
+            android:id="@+id/tv_jinbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/ratingbar_number"
+            android:layout_marginLeft="1dp"
+            android:layout_toEndOf="@+id/tv_money"
+            android:gravity="center"
+            android:text="金币"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</RelativeLayout>
+
