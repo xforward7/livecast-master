@@ -1,0 +1,12 @@
+include ':app', ':core-framework', ':dkplayer-armv5', ':tuikit'
+include ':dkplayer-java'
+include ':dkplayer-ui'
+
+//module
+include ':module_webview'
+
+//libs
+include ':library_stickyhead'
+include ':library_badge'
+
+
